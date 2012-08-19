@@ -1,0 +1,7 @@
+env = Environment()
+env.VariantDir("obj/","src/")
+obj_list = env.Object(target = "obj/gltest.o", source = "src/gltest.cpp")
+env.Append(CPPPATH = ['/usr/include/','/usr/include/libfreenect'])
+env.Append(LIBPATH = ['/usr/lib','/usr/lib/libfreenect/'])
+env.Append(LIBS = ['GL','glut','freenect','pthread','m'])
+env.Program(target = 'bin/GLtest', source = obj_list)

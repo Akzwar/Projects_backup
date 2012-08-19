@@ -1,0 +1,5 @@
+env = Environment()
+env.Append(CPPPATH = ['/usr/include/','/usr/include/libfreenect'])
+env.Append(LIBPATH = ['/usr/lib','/usr/lib/libfreenect/'])
+env.Append(LIBS = ['GL','glut','freenect','pthread','m'])
+env.Program(target = 'bin/glView', source = 'src/glview.cpp')

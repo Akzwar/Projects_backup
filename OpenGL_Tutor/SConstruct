@@ -1,0 +1,6 @@
+OGL = Environment()
+sources = Glob("src/*.cpp")
+OGL.VariantDir("src", "obj", duplicate = 0 )
+obj_source = OGL.Object( source = sources )
+OGL.Program( target = "bin/OpenGL_Tutor", LIBS = [ "GL", "GLU", "glut" ], source = obj_source )
+

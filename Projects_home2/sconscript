@@ -1,0 +1,7 @@
+Import('env')
+utils = Glob( 'utils/*.cpp' )
+glview = Glob( 'glview/*.cpp' )
+env.Append( LIBS = [ 'GL', 'GLU', 'glut', 'png' ] )
+lib = env.StaticLibrary( 'dvutils', [ utils, glview ] )
+AlwaysBuild( lib )
+Return('lib')

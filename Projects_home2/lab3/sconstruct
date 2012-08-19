@@ -1,0 +1,30 @@
+import os
+TARGETNAME = 'lab3'
+
+SRCDIR = 'src'
+OBJDIR = 'obj'
+BINDIR = 'bin'
+DVUTILSPATH = '../'
+
+MYLIBS= [ 'GL', 'GLU', 'glut', 'png' ]
+
+env = Environment( CPPPATH = DVUTILSPATH )
+env.VariantDir( OBJDIR, SRCDIR, duplicate=0 )
+sources = Glob( OBJDIR + '/*.cpp' )
+env.Append( LIBS = MYLIBS )
+
+dvutils = SConscript( DVUTILSPATH + '/sconscript', exports='env' )
+
+obj_list = env.Object( source=sources )
+env.Append( CPPFLAGS = ' -g -fpermissive -std=c++0x' )
+
+program = env.Program( BINDIR + '/' + TARGETNAME, [ obj_list, dvutils ] )
+Depends( program, dvutils )
+AlwaysBuild( program )
+
+ctags_line = 'ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . ' + DVUTILSPATH
+
+ctags = os.popen( ctags_line ).read()
+
+#cmd = env.Command(target='tags', action='ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . ' + DVUTILSPATH )
+#ctags = env.Command( source = 'tags', target = 'tags', action = 'ctags', kw = '-R --c++-kinds=+p --fields=+iaS --extra=+q . ' )

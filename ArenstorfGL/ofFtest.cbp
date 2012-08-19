@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ofFtest" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons/;src/;build config/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/$(PROJECT_NAME)_debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworksDebug.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add directory="../OpenFrameworks/libs/openFrameworks" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/3d" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/app" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/communication" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/events" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/gl" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/graphics" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/math" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/sound" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/types" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/utils" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/video" />
+					<Add directory="/usr/include/" />
+					<Add directory="../OpenFrameworks/libs/assimp/include/Compiler" />
+					<Add directory="../OpenFrameworks/libs/assimp/include" />
+					<Add directory="../OpenFrameworks/libs/cairo/include/cairo" />
+					<Add directory="../OpenFrameworks/libs/cairo/include/libpng15" />
+					<Add directory="../OpenFrameworks/libs/cairo/include/pixman-1" />
+					<Add directory="../OpenFrameworks/libs/cairo/include" />
+					<Add directory="../OpenFrameworks/libs/fmodex/include" />
+					<Add directory="../OpenFrameworks/libs/FreeImage/include" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/config" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/internal/services" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/internal" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2" />
+					<Add directory="../OpenFrameworks/libs/glew/include/GL" />
+					<Add directory="../OpenFrameworks/libs/kiss/include" />
+					<Add directory="../OpenFrameworks/libs/poco/include/CppUnit" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/DOM" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/Dynamic" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/Net" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/SAX" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/Util" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/XML" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco" />
+					<Add directory="../OpenFrameworks/libs/portaudio/include" />
+					<Add directory="../OpenFrameworks/libs/rtAudio/include" />
+					<Add directory="../OpenFrameworks/libs/tess2/include" />
+					<Add directory="../OpenFrameworks/libs/poco/include" />
+				</Compiler>
+				<Linker>
+					<Add library="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworks.a" />
+					<Add library="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworksDebug.a" />
+					<Add library="/usr/lib/libz.so" />
+					<Add library="../OpenFrameworks/libs/fmodex/lib/linux/libfmodex.so" />
+					<Add library="../OpenFrameworks/libs/freetype/lib/linux/libfreetype.a" />
+					<Add library="../OpenFrameworks/libs/kiss/lib/linux/libkiss.a" />
+					<Add library="/usr/lib/libGL.so" />
+					<Add library="/usr/lib/libpthread.so" />
+					<Add library="/usr/lib/libGLEW.so" />
+					<Add library="/usr/lib/libGLU.so" />
+					<Add library="/usr/lib/libglut.so" />
+					<Add library="/usr/lib/libcairo.so" />
+					<Add library="/usr/lib/libfreeimage.so" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoFoundation.a" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoNet.a" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoUtil.a" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoXML.a" />
+					<Add library="../OpenFrameworks/libs/portaudio/lib/linux/libportaudio.a" />
+					<Add library="../OpenFrameworks/libs/rtAudio/lib/linux/libRtAudio.a" />
+					<Add library="/usr/lib/libopenal.so" />
+					<Add library="/usr/lib/libfmodex.so" />
+					<Add library="/usr/lib/libfmodexp.so" />
+					<Add library="../fff/bin/libs/libfmodexp.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option external_deps="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add directory="../OpenFrameworks/libs/openFrameworks" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/3d" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/app" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/communication" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/events" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/gl" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/graphics" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/math" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/sound" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/types" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/utils" />
+					<Add directory="../OpenFrameworks/libs/openFrameworks/video" />
+					<Add directory="/usr/include/" />
+					<Add directory="../OpenFrameworks/libs/assimp/include/Compiler" />
+					<Add directory="../OpenFrameworks/libs/assimp/include" />
+					<Add directory="../OpenFrameworks/libs/cairo/include/cairo" />
+					<Add directory="../OpenFrameworks/libs/cairo/include/libpng15" />
+					<Add directory="../OpenFrameworks/libs/cairo/include/pixman-1" />
+					<Add directory="../OpenFrameworks/libs/cairo/include" />
+					<Add directory="../OpenFrameworks/libs/fmodex/include" />
+					<Add directory="../OpenFrameworks/libs/FreeImage/include" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/config" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/internal/services" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/internal" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype" />
+					<Add directory="../OpenFrameworks/libs/freetype/include/freetype2" />
+					<Add directory="../OpenFrameworks/libs/glew/include/GL" />
+					<Add directory="../OpenFrameworks/libs/kiss/include" />
+					<Add directory="../OpenFrameworks/libs/poco/include/CppUnit" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/DOM" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/Dynamic" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/Net" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/SAX" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/Util" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco/XML" />
+					<Add directory="../OpenFrameworks/libs/poco/include/Poco" />
+					<Add directory="../OpenFrameworks/libs/portaudio/include" />
+					<Add directory="../OpenFrameworks/libs/rtAudio/include" />
+					<Add directory="../OpenFrameworks/libs/tess2/include" />
+					<Add directory="../OpenFrameworks/libs/poco/include" />
+				</Compiler>
+				<Linker>
+					<Add library="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworks.a" />
+					<Add library="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworksDebug.a" />
+					<Add library="/usr/lib/libz.so" />
+					<Add library="../OpenFrameworks/libs/fmodex/lib/linux/libfmodex.so" />
+					<Add library="../OpenFrameworks/libs/freetype/lib/linux/libfreetype.a" />
+					<Add library="../OpenFrameworks/libs/kiss/lib/linux/libkiss.a" />
+					<Add library="/usr/lib/libGL.so" />
+					<Add library="/usr/lib/libpthread.so" />
+					<Add library="/usr/lib/libGLEW.so" />
+					<Add library="/usr/lib/libGLU.so" />
+					<Add library="/usr/lib/libglut.so" />
+					<Add library="/usr/lib/libcairo.so" />
+					<Add library="/usr/lib/libfreeimage.so" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoFoundation.a" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoNet.a" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoUtil.a" />
+					<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoXML.a" />
+					<Add library="../OpenFrameworks/libs/portaudio/lib/linux/libportaudio.a" />
+					<Add library="../OpenFrameworks/libs/rtAudio/lib/linux/libRtAudio.a" />
+					<Add library="/usr/lib/libopenal.so" />
+					<Add library="/usr/lib/libfmodex.so" />
+					<Add library="/usr/lib/libfmodexp.so" />
+					<Add library="../fff/bin/libs/libfmodex.so" />
+					<Add library="../fff/bin/libs/libfmodexp.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../OpenFrameworks/libs/openFrameworks" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/3d" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/app" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/communication" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/events" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/gl" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/graphics" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/math" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/sound" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/types" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/utils" />
+			<Add directory="../OpenFrameworks/libs/openFrameworks/video" />
+			<Add directory="/usr/include/" />
+			<Add directory="../OpenFrameworks/libs/assimp/include/Compiler" />
+			<Add directory="../OpenFrameworks/libs/assimp/include" />
+			<Add directory="../OpenFrameworks/libs/cairo/include/cairo" />
+			<Add directory="../OpenFrameworks/libs/cairo/include/libpng15" />
+			<Add directory="../OpenFrameworks/libs/cairo/include/pixman-1" />
+			<Add directory="../OpenFrameworks/libs/cairo/include" />
+			<Add directory="../OpenFrameworks/libs/fmodex/include" />
+			<Add directory="../OpenFrameworks/libs/FreeImage/include" />
+			<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/config" />
+			<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/internal/services" />
+			<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype/internal" />
+			<Add directory="../OpenFrameworks/libs/freetype/include/freetype2/freetype" />
+			<Add directory="../OpenFrameworks/libs/freetype/include/freetype2" />
+			<Add directory="../OpenFrameworks/libs/glew/include/GL" />
+			<Add directory="../OpenFrameworks/libs/kiss/include" />
+			<Add directory="../OpenFrameworks/libs/poco/include/CppUnit" />
+			<Add directory="../OpenFrameworks/libs/poco/include/Poco/DOM" />
+			<Add directory="../OpenFrameworks/libs/poco/include/Poco/Dynamic" />
+			<Add directory="../OpenFrameworks/libs/poco/include/Poco/Net" />
+			<Add directory="../OpenFrameworks/libs/poco/include/Poco/SAX" />
+			<Add directory="../OpenFrameworks/libs/poco/include/Poco/Util" />
+			<Add directory="../OpenFrameworks/libs/poco/include/Poco/XML" />
+			<Add directory="../OpenFrameworks/libs/poco/include/Poco" />
+			<Add directory="../OpenFrameworks/libs/portaudio/include" />
+			<Add directory="../OpenFrameworks/libs/rtAudio/include" />
+			<Add directory="../OpenFrameworks/libs/tess2/include" />
+			<Add directory="../OpenFrameworks/libs/poco/include" />
+		</Compiler>
+		<Linker>
+			<Add library="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworks.a" />
+			<Add library="../OpenFrameworks/libs/openFrameworksCompiled/lib/linux/libopenFrameworksDebug.a" />
+			<Add library="/usr/lib/libz.so" />
+			<Add library="../OpenFrameworks/libs/fmodex/lib/linux/libfmodex.so" />
+			<Add library="../OpenFrameworks/libs/freetype/lib/linux/libfreetype.a" />
+			<Add library="../OpenFrameworks/libs/kiss/lib/linux/libkiss.a" />
+			<Add library="/usr/lib/libGL.so" />
+			<Add library="/usr/lib/libpthread.so" />
+			<Add library="/usr/lib/libGLEW.so" />
+			<Add library="/usr/lib/libGLU.so" />
+			<Add library="/usr/lib/libglut.so" />
+			<Add library="/usr/lib/libcairo.so" />
+			<Add library="/usr/lib/libfreeimage.so" />
+			<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoFoundation.a" />
+			<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoNet.a" />
+			<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoUtil.a" />
+			<Add library="../OpenFrameworks/libs/poco/lib/linux/libPocoXML.a" />
+			<Add library="../OpenFrameworks/libs/portaudio/lib/linux/libportaudio.a" />
+			<Add library="../OpenFrameworks/libs/rtAudio/lib/linux/libRtAudio.a" />
+			<Add library="/usr/lib/libopenal.so" />
+			<Add library="/usr/lib/libfmodex.so" />
+			<Add library="/usr/lib/libfmodexp.so" />
+			<Add library="../fff/bin/libs/libfmodex.so" />
+			<Add library="../fff/bin/libs/libfmodexp.so" />
+		</Linker>
+		<Unit filename="config.make">
+			<Option virtualFolder="build config" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/testApp.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/testApp.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
